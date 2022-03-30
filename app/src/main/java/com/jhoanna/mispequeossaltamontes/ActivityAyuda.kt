@@ -10,5 +10,12 @@ class ActivityAyuda : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ayuda)
 
+        val btnAtras: Button = findViewById(R.id.btnAtras)
+        btnAtras.setOnClickListener{isFinish()}
     }
-}
+
+    private fun isFinish(){
+        finish()
+    }
+
+    }

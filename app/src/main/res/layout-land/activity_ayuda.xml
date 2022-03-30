@@ -10,16 +10,17 @@
 
     <TextView
         android:id="@+id/editText"
-        android:layout_width="338dp"
+        android:layout_width="800dp"
         android:layout_height="500dp"
         android:ems="10"
-        android:textStyle="italic"
-        android:textSize="30sp"
-        android:text="El componente ScrollView permite crear un Scroll que puede ser usado en
-         la pantalla del dispositivo cuando existan mas componentes en ella superando el tamaño
-         de la misma, En este ejemplo podemos desplazarnos por la pantalla visualizando algunos
-         componentes ocultos, aqui simularemos la creacion de un formulario"
         android:inputType="textMultiLine"
+        android:text="Mis pequeños saltamontes contara con una venta de registro, estadísticas y ayuda.
+         en el de registro podrá diligenciar un formulario con los datos del estudiante y las 5 materias
+         con sus respectivas notas, en la sección de estadística podrá ver el resultado de los estudiantes
+         que ganan y pierden la materia al igual de los que recuperan y los procesados"
+
+        android:textSize="40sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,8 +34,8 @@
         android:text="Atras"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.894" />
+        app:layout_constraintVertical_bias="0.919" />
 </androidx.constraintlayout.widget.ConstraintLayout>
