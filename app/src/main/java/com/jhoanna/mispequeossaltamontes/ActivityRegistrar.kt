@@ -103,21 +103,21 @@ class ActivityRegistrar : AppCompatActivity() {
             Operaciones.imprimirEstudiantes()
 
             if(estu.primerNota >5
-                || estu.segundaNota>5
-                || estu.tercerNota>5
-                || estu.cuartaNota>5
-                || estu.quintaNota>5){
+                || estu.segundaNota >5
+                || estu.tercerNota >5
+                || estu.cuartaNota >5
+                || estu.quintaNota >5){
                 Toast.makeText(this,
                     "Las notas no pueden ser mayores a 5", Toast.LENGTH_LONG).show()
 
-            } else if(estu.primerNota >0
-                || estu.segundaNota>0
-                || estu.tercerNota>0
-                || estu.cuartaNota>0
-                || estu.quintaNota>0) {
+            } else if(estu.primerNota <0
+                || estu.segundaNota <0
+                || estu.tercerNota <0
+                || estu.cuartaNota <0
+                || estu.quintaNota <0){
                 Toast.makeText(
                     this,
-                    "Las notas no pueden ser negativos", Toast.LENGTH_LONG
+                    "Las notas no pueden ser negativas", Toast.LENGTH_LONG
                 ).show()
             } else if (estu.nombre.isNullOrBlank()
                 || estu.documento.isNullOrBlank()
@@ -134,13 +134,13 @@ class ActivityRegistrar : AppCompatActivity() {
             }else {
                 var mensajes = ""
                 if (estu.promedio >= 3.5) {
-                    mensajes = "Usted ganó el periodo"
+                    mensajes = "El estudiante ganó el periodo"
 
                 } else if (estu.promedio > 2.5 && estu.promedio < 3.5) {
-                    mensajes = "Usted perdió el periodo pero puede recuperar"
+                    mensajes = "El estudiante perdió el periodo pero puede recuperar"
 
                 } else {
-                    mensajes = "Usted perdió el periodo"
+                    mensajes = "El estudiante perdió el periodo"
                 }
                 estu.resFinal = mensajes
 

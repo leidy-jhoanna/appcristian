@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".ActivityAyuda">
+
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="338dp"
+        android:layout_height="500dp"
+        android:ems="10"
+        android:textStyle="italic"
+        android:textSize="30sp"
+        android:text="El componente ScrollView permite crear un Scroll que puede ser usado en
+         la pantalla del dispositivo cuando existan mas componentes en ella superando el tamaño
+         de la misma, En este ejemplo podemos desplazarnos por la pantalla visualizando algunos
+         componentes ocultos, aqui simularemos la creacion de un formulario"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.241" />
+
+    <Button
+        android:id="@+id/btnAtras"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Atras"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.894" />
+</androidx.constraintlayout.widget.ConstraintLayout>
